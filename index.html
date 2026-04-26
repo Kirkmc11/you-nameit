@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Name It — Custom Branded Products & Corporate Gifts</title>
+  <meta name="description" content="Quality branded merchandise sourced, designed and delivered — with personal service from start to finish. South Africa." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="logo.png" alt="You Name It" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <span class="nav-logo-text" style="display:none;">You <span>Name</span> It</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta btn">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Custom Branded Products <span>
+          <h1>Your brand.<br>Your story.<br><em>We make it tangible.</em></h1>
+          <p>Quality branded merchandise sourced, designed and delivered with personal service from start to finish.</p>
+          <div class="hero-btns">
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+            <a href="services.html" class="btn btn-secondary">Our Services</a>
+          </div>
+        </div>
+
+        <!--
+          ROTATING HERO GRID — 4 cards x 5 slides = 20 images total
+          Put your images in an /images/ folder alongside index.html.
+          Name them: card1-slide1.jpg, card1-slide2.jpg ... card4-slide5.jpg
+          All 4 cards rotate together every 5 seconds.
+        -->
+        <div class="hero-grid-wrap">
+          <div class="hero-grid" id="heroGrid">
+
+            <!-- CARD 1: top-left -->
+            <div class="hero-card rotating-card">
+              <div class="slide active">
+                <img src="images/card1-slide1.jpg" alt="Branded Clothing" />
+                <!-- <span class="hero-card-label">Branded Clothing</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card1-slide2.jpg" alt="T-Shirts" />
+                <!-- <span class="hero-card-label">T-Shirts</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card1-slide3.jpg" alt="Polos" />
+                <!-- <span class="hero-card-label">Polos</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card1-slide4.jpg" alt="Hoodies" />
+                <!-- <span class="hero-card-label">Hoodies</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card1-slide5.jpg" alt="Caps &amp; Jackets" />
+                <!-- <span class="hero-card-label">Caps &amp; Jackets</span> -->
+              </div>
+            </div>
+
+            <!-- CARD 2: top-right -->
+            <div class="hero-card rotating-card">
+              <div class="slide active">
+                <img src="images/card2-slide1.jpg" alt="Corporate Gifts" />
+                <!-- <span class="hero-card-label">Corporate Gifts</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card2-slide2.jpg" alt="Gift Sets" />
+                <!-- <span class="hero-card-label">Gift Sets</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card2-slide3.jpg" alt="Branded Notebooks" />
+                <!-- <span class="hero-card-label">Branded Notebooks</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card2-slide4.jpg" alt="Hampers" />
+                <!-- <span class="hero-card-label">Hampers</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card2-slide5.jpg" alt="Premium Keepsakes" />
+                <!-- <span class="hero-card-label">Premium Keepsakes</span> -->
+              </div>
+            </div>
+
+            <!-- CARD 3: bottom-left -->
+            <div class="hero-card rotating-card">
+              <div class="slide active">
+                <img src="images/card3-slide1.jpg" alt="Event Merch" />
+                <!-- <span class="hero-card-label">Event Merch</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card3-slide2.jpg" alt="Lanyards" />
+                <!-- <span class="hero-card-label">Lanyards</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card3-slide3.jpg" alt="Giveaways" />
+                <!-- <span class="hero-card-label">Giveaways</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card3-slide4.jpg" alt="Trade Shows" />
+                <!-- <span class="hero-card-label">Trade Shows</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card3-slide5.jpg" alt="Conferences" />
+                <!-- <span class="hero-card-label">Conferences</span> -->
+              </div>
+            </div>
+
+            <!-- CARD 4: bottom-right -->
+            <div class="hero-card rotating-card">
+              <div class="slide active">
+                <img src="images/card4-slide1.jpg" alt="Desk Accessories" />
+                <!-- <span class="hero-card-label">Desk Accessories</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card4-slide2.jpg" alt="Custom Mugs" />
+                <!-- <span class="hero-card-label">Custom Mugs</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card4-slide3.jpg" alt="Branded Pens" />
+                <!-- <span class="hero-card-label">Branded Pens</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card4-slide4.jpg" alt="Bulk Orders" />
+                <!-- <span class="hero-card-label">Bulk Orders</span> -->
+              </div>
+              <div class="slide">
+                <img src="images/card4-slide5.jpg" alt="Corporate Sets" />
+                <!-- <span class="hero-card-label">Corporate Sets</span> -->
+              </div>
+            </div>
+
+          </div><!-- /hero-grid -->
+
+          <!-- Progress dots -->
+          <div class="hero-dots">
+            <span class="hero-dot active"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+          </div>
+        </div><!-- /hero-grid-wrap -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT WE OFFER — compact icon tiles ===== -->
+  <section class="what-we-create">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Offer</span>
+      </div>
+      <div class="icon-tile-grid">
+
+        <!-- Corporate Gifts -->
+        <a href="services.html#gifts" class="icon-tile">
+          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 12 20 22 4 22 4 12"/>
+            <rect x="2" y="7" width="20" height="5"/>
+            <line x1="12" y1="22" x2="12" y2="7"/>
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+          </svg>
+          <span>Corporate Gifts</span>
+        </a>
+
+        <!-- Event Merchandise -->
+        <a href="services.html#events" class="icon-tile">
+          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2z"/>
+            <line x1="9" y1="12" x2="15" y2="12"/>
+          </svg>
+          <span>Event Merchandise</span>
+        </a>
+
+        <!-- Branded Clothing -->
+        <a href="services.html#clothing" class="icon-tile">
+          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.23z"/>
+          </svg>
+          <span>Branded Clothing</span>
+        </a>
+
+        <!-- Branded Headwear -->
+        <a href="services.html#headwear" class="icon-tile">
+          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 18c0-4 2-7 9-7s9 3 9 7"/>
+            <path d="M12 11V5"/>
+            <path d="M8 5c0 2.2 1.8 4 4 4s4-1.8 4-4"/>
+          </svg>
+          <span>Branded Headwear</span>
+        </a>
+
+        <!-- Hampers -->
+        <a href="services.html#hampers" class="icon-tile">
+          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span>Hampers</span>
+        </a>
+
+        <!-- Custom Branding -->
+        <a href="contact.html" class="icon-tile">
+          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="2" x2="22" y2="6"/>
+            <path d="M7.5 20.5 19 9l-4-4L3.5 16.5 2 22z"/>
+          </svg>
+          <span>Custom Branding</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURE / CORPORATE & PROMO ===== -->
+  <section class="feature-section">
+    <div class="container">
+      <div class="feature-inner">
+        <div class="feature-content">
+          <span class="section-label">Corporate &amp; Promotional</span>
+          <h2>From boardrooms to events, we deliver branded products that represent you.</h2>
+          <p>We work with you to source the right products, get your branding exactly right, and deliver on time whether you need 10 items or 10,000.</p>
+          <a href="services.html" class="btn btn-outline">Explore Services →</a>
+        </div>
+        <div class="feature-image">
+          <img src="images/corporate-branding.jpg" alt="Corporate Branding Products" /> -->
+          <div class="feature-image-placeholder">
+            <span>Corporate Branding Products</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How It Works</span>
+        <h2>Three steps. Zero stress.</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Tell us what you need</h3>
+          <p>Share your requirements, quantities, timeline and any inspiration. We'll take it from there.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>We source &amp; design it</h3>
+          <p>We find the right products, prepare artwork, and send proofs for your approval.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>We deliver</h3>
+          <p>We handle production and delivery right to your door, on time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <span class="section-label">What Clients Say</span>
+      <h2>Trusted by businesses across South Africa</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"The service was exceptional from start to finish. Communication was clear, turnaround times were impressive, and everything was handled with real professionalism. It made coordinating our team event effortless."</blockquote>
+          <div class="testimonial-author">
+            <strong>Lindey S.</strong>
+            <span>Event Coordinator, Cape Town</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Working with the You Name It team was an absolute pleasure. They understood exactly what we needed, delivered on time, and made the entire process smooth and stress-free. Their attention to detail really stood out."</blockquote>
+          <div class="testimonial-author">
+            <strong>Ingrid M.</strong>
+            <span>Event Manager, Johannesburg</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Fantastic service, excellent quality, and a team that genuinely cares about getting it right. They were responsive, reliable, and helped make our promotional event a huge success."</blockquote>
+          <div class="testimonial-author">
+            <strong>Alison H.</strong>
+            <span>Business Owner, Johannesburg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Let's create something for your brand.</h2>
+      <p>Tell us what you need. We'll handle the rest.</p>
+      <a href="contact.html" class="btn btn-primary">Get a Quote →</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="You Name It" style="height:32px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <span class="nav-logo-text" style="display:none; font-size:1.1rem;">You <span>Name</span> It</span>
+          </a>
+          <p>Custom branded products and corporate gifts, sourced and delivered with personal service.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            <a href="mailto:info@you-nameit.co.za">info@you-nameit.co.za</a><br />
+            <a href="tel:+27728580600">+27 72 858 0600</a><br />
+            South Africa
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 You Name It. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Mobile nav toggle ──
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // ── Hero rotating grid ──
+    // All 4 cards advance to the same slide index simultaneously
+    const cards = document.querySelectorAll('.rotating-card');
+    const dots  = document.querySelectorAll('.hero-dot');
+    const TOTAL = 5;
+    let current = 0;
+
+    function goToSlide(next) {
+      cards.forEach(card => {
+        card.querySelectorAll('.slide')[current].classList.remove('active');
+        card.querySelectorAll('.slide')[next].classList.add('active');
+      });
+      dots[current].classList.remove('active');
+      dots[next].classList.add('active');
+      current = next;
+    }
+
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
+    setInterval(() => goToSlide((current + 1) % TOTAL), 5000);
+  </script>
+
+</body>
+</html>
