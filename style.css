@@ -275,7 +275,7 @@ nav {
   justify-content: flex-end;
   padding: 16px;
   position: relative;
-  /* border: 1px solid rgba(255,255,255,0.06); */
+  border: 1px solid rgba(255,255,255,0.06);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
@@ -470,6 +470,14 @@ nav {
   margin-bottom: 32px;
 }
 
+/* Button group — side by side buttons */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
 /* Sub-grouped tags (e.g. Indoor / Outdoor within Event Merch) */
 .tag-group {
   margin-bottom: 16px;
@@ -515,7 +523,7 @@ nav {
   overflow: hidden;
   aspect-ratio: 4/3;
   position: relative;
-  /* border: 1px solid rgba(255,255,255,0.06); */
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
 .feature-image img {
@@ -733,7 +741,7 @@ nav {
   overflow: hidden;
   aspect-ratio: 4/3;
   position: relative;
-  /* border: 1px solid rgba(255,255,255,0.05); */
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
 .service-image img {
