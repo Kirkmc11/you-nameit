@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogues — You Name It</title>
+  <meta name="description" content="Browse our full range of promotional products and branded apparel catalogues." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* Catalogue page specific styles */
+    .catalogues-hero {
+      background: var(--navy);
+      padding: 140px 0 80px;
+      text-align: center;
+    }
+    .catalogues-hero h1 { color: var(--white); margin: 12px 0 16px; }
+    .catalogues-hero p { color: rgba(255,255,255,0.6); font-size: 1.05rem; max-width: 520px; margin: 0 auto; }
+
+    .catalogue-section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .catalogue-section:last-of-type { border-bottom: none; }
+    .catalogue-section:nth-child(even) { background: var(--off-white); }
+
+    .catalogue-header {
+      margin-bottom: 24px;
+    }
+    .catalogue-header h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      color: var(--text-dark);
+    }
+    .catalogue-header p {
+      color: var(--text-mid);
+      font-size: 0.95rem;
+    }
+
+    .catalogue-embed {
+      width: 100%;
+      height: 85vh;
+      min-height: 600px;
+      border: none;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .catalogue-embed {
+        height: 70vh;
+        min-height: 480px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="logo.png" alt="You Name It" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <span class="nav-logo-text" style="display:none;">You <span>Name</span> It</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Products</a></li>
+          <li><a href="catalogues.html" class="active">Catalogues</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta btn">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="catalogues-hero">
+    <div class="container">
+      <span class="section-label">Browse &amp; Explore</span>
+      <h1>Our Catalogues</h1>
+      <p>Browse our full range of promotional products and branded apparel — find the perfect items for your brand.</p>
+    </div>
+  </section>
+
+  <!-- ===== CATALOGUE 1 ===== -->
+  <section class="catalogue-section">
+    <div class="container">
+      <div class="catalogue-header">
+        <h2>Promotional Products 2025–2026</h2>
+        <p>Corporate gifts, branded merchandise, giveaways and more.</p>
+      </div>
+      <iframe
+        class="catalogue-embed"
+        src="https://viewer.zoomcatalog.com/promotional-products-2025-2026"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        scrolling="auto"
+        allowtransparency="true"
+        title="Promotional Products 2025-2026 Catalogue">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== CATALOGUE 2 ===== -->
+  <section class="catalogue-section">
+    <div class="container">
+      <div class="catalogue-header">
+        <h2>Corporate &amp; Promotional Apparel and Headwear 2026–2027</h2>
+        <p>Branded clothing, headwear, uniforms and team apparel.</p>
+      </div>
+      <iframe
+        class="catalogue-embed"
+        src="https://viewer.zoomcatalog.com/corporate-and-promotional-apparel-and-headwear-2026-2027"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        scrolling="auto"
+        allowtransparency="true"
+        title="Corporate & Promotional Apparel and Headwear 2026-2027 Catalogue">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>See something you like?</h2>
+      <p>Get in touch and we'll make it happen with your branding on it.</p>
+      <a href="contact.html" class="btn btn-primary">Get a Quote →</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="You Name It" style="height:32px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <span class="nav-logo-text" style="display:none; font-size:1.1rem;">You <span>Name</span> It</span>
+          </a>
+          <p>Custom branded products and corporate gifts, sourced and delivered with personal service.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Products</a></li>
+            <li><a href="catalogues.html">Catalogues</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            <a href="mailto:info@you-nameit.co.za">info@you-nameit.co.za</a><br />
+            <a href="tel:+27728580600">+27 72 858 0600</a><br />
+            South Africa
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 You Name It. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+
+</body>
+</html>
