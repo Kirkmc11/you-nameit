@@ -25,7 +25,8 @@
         </button>
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html">Products</a></li>
+          <li><a href="catalogues.html">Catalogues</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
           <li><a href="contact.html" class="nav-cta btn">Get a Quote</a></li>
         </ul>
@@ -63,29 +64,14 @@
   <section class="form-section">
     <div class="container">
       <div class="divider-text">— or use the form below —</div>
-
       <div class="form-wrap" style="margin-top: 48px;">
         <div class="form-header">
           <h2>Send a Quote Request</h2>
           <p>We respond quickly and work closely with you from the start.</p>
         </div>
-
-        <!--
-          FORMSPREE SETUP INSTRUCTIONS:
-          1. Go to https://formspree.io and create a free account
-          2. Create a new form and set the recipient to: info@you-nameit.co.za
-          3. Copy your unique form endpoint (looks like: https://formspree.io/f/xyzABCDE)
-          4. Replace "YOUR_FORMSPREE_ID" in the action below with your actual form ID
-        -->
-        <form
-          id="quoteForm"
-          class="quote-form"
-          action="https://formspree.io/f/mjgjzrgb"
-          method="POST"
-        >
+        <form id="quoteForm" class="quote-form" action="https://formspree.io/f/mjgjzrgb" method="POST">
           <input type="hidden" name="_next" value="https://you-nameit.co.za/contact.html?success=true" />
           <input type="hidden" name="_subject" value="New Quote Request — You Name It" />
-
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name <span class="required">*</span></label>
@@ -96,12 +82,10 @@
               <input type="email" id="email" name="email" placeholder="jane@company.com" required />
             </div>
           </div>
-
           <div class="form-group">
             <label for="phone">Phone / WhatsApp</label>
             <input type="tel" id="phone" name="phone" placeholder="+27 72 858 0600" />
           </div>
-
           <div class="form-group">
             <label for="service">What are you looking for? <span class="required">*</span></label>
             <select id="service" name="service" required>
@@ -114,23 +98,16 @@
               <option value="Not Sure / Other">Not Sure / Other</option>
             </select>
           </div>
-
           <div class="form-group">
             <label for="message">Tell us more</label>
             <textarea id="message" name="message" placeholder="Quantities, timeline, budget, any inspiration — the more detail the better!"></textarea>
           </div>
-
-          <button type="submit" class="btn btn-primary form-submit-btn">
-            Send My Request →
-          </button>
+          <button type="submit" class="btn btn-primary form-submit-btn">Send My Request →</button>
         </form>
-
-        <!-- Success message -->
         <div class="form-success" id="formSuccess">
           <h3>🎉 Request sent!</h3>
           <p>Thanks — we'll be in touch shortly. If it's urgent, WhatsApp us directly.</p>
         </div>
-
         <div class="form-trust">
           <span class="trust-item">We reply fast</span>
           <span class="trust-item">Quality guaranteed</span>
@@ -156,7 +133,8 @@
           <h4>Pages</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="services.html">Products</a></li>
+            <li><a href="catalogues.html">Catalogues</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -176,12 +154,10 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
     const toggle = document.getElementById('navToggle');
     const links  = document.getElementById('navLinks');
     toggle.addEventListener('click', () => links.classList.toggle('open'));
 
-    // Pre-select service from URL param
     const params = new URLSearchParams(window.location.search);
     const serviceMap = {
       clothing: 'Branded Clothing',
@@ -197,8 +173,6 @@
         if (opt.value === preselect) { opt.selected = true; break; }
       }
     }
-
-    // Show success message if redirected back with ?success=true
     if (params.get('success') === 'true') {
       document.getElementById('quoteForm').style.display = 'none';
       document.getElementById('formSuccess').style.display = 'block';
